@@ -1,14 +1,13 @@
 # Assets Folder
 
-This folder contains all the **datasets, images, videos, and supporting files** used in the deep learning and computer vision projects within this repository.
+This folder contains all the **datasets, images, and supporting files** used in the deep learning and computer vision projects within this repository.
 
 ---
 
 ## Contents
 
 - **Image datasets** – Raw image data organized into class-based folders for training deep learning models  
-- **Videos & Media** – Input videos used for real-time computer vision tasks  
-- **Visualizations & Plots** – Training results such as accuracy curves, sample grids, and model outputs  
+- **Visualizations & Demos** – GIFs and plots used to demonstrate model performance  
 - **Project-specific assets** – Each project has its own subfolder containing its data and outputs  
 
 ---
@@ -29,12 +28,8 @@ The assets are organized into separate folders for each project:
 
 ### `Parking_Spots_Counter_OpenCV/`
 
-- Input video:
-  - `parking_Full_loop.mp4`  
-  - `parking_crop_loop.mp4`  
-- Processed demo:
+- Demo:
   - `OpenCV_demo.gif`  
-  - `OpenCV_vid_demo.mp4`  
 - Parking masks:
   - `mask_Full.png`  
   - `mask_crop.png`  
@@ -42,10 +37,24 @@ The assets are organized into separate folders for each project:
   - `model.p`  
 
 These assets support a **real-time parking spot detection system**, including:
-- video-based input  
 - region masking for parking slots  
 - model inference outputs  
-- final visualization (GIF + video)
+- final visualization (GIF demo)  
+
+---
+
+### `number_plate_recognition_Yolo_EasyOCR/`
+
+- Dataset:
+  - `License_Plate_Dataset/` (~10k labeled license plate images in YOLO format)  
+- Demo:
+  - `demo.gif`  
+
+These assets support a **license plate recognition system**, including:
+- vehicle and plate detection using YOLOv8  
+- vehicle tracking using SORT  
+- OCR processing using EasyOCR  
+- final annotated output visualization  
 
 ---
 
@@ -53,13 +62,14 @@ These assets support a **real-time parking spot detection system**, including:
 
 - [Flowers Recognition — CNN Image Classification](../Flowers_Recognition_CNN)  
 - [Parking Spots Counter — OpenCV Real-Time Detection](../Parking_Spots_Counter_OpenCV)  
+- [License Plate Recognition — YOLOv8, SORT & OCR](../number_plate_recognition_Yolo_EasyOCR)  
 
 ---
 
 ## Notes
 
-- All assets are organized per project to maintain a **clean and modular structure**  
-- Large media files (videos, GIFs) are included for **visual demonstration purposes**  
-- This centralized structure ensures easy access and scalability for future projects  
+- Large video files are intentionally excluded to keep the repository lightweight  
+- GIFs are used instead for **fast, clear visual demonstrations**  
+- Assets are organized per project to maintain a **clean and scalable structure**  
 
 ---

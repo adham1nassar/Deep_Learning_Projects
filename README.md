@@ -76,12 +76,40 @@ This repo contains self-contained deep learning and computer vision projects (ea
 
 ---
 
-### Training Environment & Optimization
+## 3) License Plate Recognition — Detection, Tracking & OCR [🔗](/number_plate_recognition_Yolo_EasyOCR)
 
-* Set up a full **TensorFlow GPU environment** using **WSL2** after encountering native Windows limitations  
-* Resolved **CUDA / cuDNN runtime issues** by configuring `LD_LIBRARY_PATH` and linking required libraries  
-* Enabled successful **GPU detection** on an **RTX 4060 Ti**  
-* Achieved significantly faster model training compared to CPU execution  
+* Built a **complete license plate recognition pipeline** combining detection, tracking, and OCR.
+* Trained a custom **YOLOv8 model** for license plate detection using a dataset of ~10,000 labeled images.
+* Used a pre-trained YOLO model to detect vehicles in each frame.
+* Implemented **SORT (Simple Online Realtime Tracking)** to:
+  * Track vehicles across frames  
+  * Assign a consistent ID to each vehicle  
+* Matched each detected license plate to its corresponding tracked vehicle.
+* Extracted and preprocessed license plate images:
+  * Grayscale conversion  
+  * Thresholding for better OCR readability  
+* Used **EasyOCR** to read license plate text.
+* Applied custom **post-processing rules** to fix OCR errors:
+  * Character-to-number corrections (e.g., O → 0, S → 5)
+* Stored results in structured CSV files:
+  * Raw detections (`plate_info.csv`)  
+  * Fixed and interpolated results (`plate_info_fixed.csv`)  
+* Handled missing detections by:
+  * Interpolating bounding boxes across frames  
+  * Smoothing tracking results  
+* Generated a final annotated output showing:
+  * Vehicle tracking  
+  * License plate detection  
+  * Recognized license numbers  
+
+---
+
+### System Design Insights
+
+* Detection alone is not sufficient → **tracking is required for temporal consistency**
+* OCR outputs require **post-processing and validation**
+* Real-world pipelines need **data correction and interpolation**
+* Combining detection + tracking + OCR creates a **complete intelligent system**
 
 ---
 
@@ -89,10 +117,11 @@ This repo contains self-contained deep learning and computer vision projects (ea
 
 * **Python (NumPy, Pandas)**
 * **Computer Vision (OpenCV, scikit-image)**
-* **Deep Learning (TensorFlow, Keras)**
+* **Deep Learning (TensorFlow, Keras, YOLOv8)**
+* **Object Tracking (SORT Algorithm)**
+* **OCR (EasyOCR)**
 * **Image preprocessing & augmentation**
 * **CNN architecture design**
-* **Model inference & optimization**
 * **Real-time video processing**
 * **Performance optimization techniques**
 * **GPU acceleration (CUDA, cuDNN, WSL2)**
@@ -113,6 +142,7 @@ The repository is organized as follows:
   - Example:
     - `assets/Flowers_Recognition/`
     - `assets/Parking_Spots_Counter_OpenCV/`
+    - `assets/number_plate_recognition_Yolo_EasyOCR/`
 
 This structure keeps the repository **clean, modular, and scalable**.
 
@@ -121,6 +151,6 @@ This structure keeps the repository **clean, modular, and scalable**.
 ## Author
 
 **Adham Nassar**  
-[LinkedIn](https://www.linkedin.com/in/adham-nassar-83ba54347)
+https://www.linkedin.com/in/adham-nassar-83ba54347
 
 This repository showcases practical experience in **deep learning, computer vision, and real-time ML systems**, focusing on building complete, efficient, and scalable pipelines.
