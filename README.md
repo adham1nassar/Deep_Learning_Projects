@@ -113,20 +113,38 @@ This repo contains self-contained deep learning and computer vision projects (ea
 
 ---
 
+
+## 4) Emotion Classification using Word2Vec Embeddings & Deep Learning [🔗]( /Emotion_Classification_Word2Vec_Embeddings_NLP )
+
+A Natural Language Processing (NLP) project focused on multi-class emotion classification using both traditional machine learning models and deep learning.
+
+The project uses custom Word2Vec embeddings to transform text into semantic vector representations before comparing multiple classification approaches including Logistic Regression, SVM, Random Forest, and a Neural Network built with TensorFlow/Keras.
+
+### Key Features
+- NLP preprocessing pipeline  
+- Custom Word2Vec embeddings (Skip-Gram)  
+- Sentence vector generation  
+- Multi-model comparison  
+- Deep learning for text classification  
+- Accuracy & weighted F1-score evaluation  
+
 ## Tools & Techniques (across projects)
 
 * **Python (NumPy, Pandas)**
+* **Machine Learning (Scikit-learn)**
+* **Natural Language Processing (NLP)**
+* **Word Embeddings (Word2Vec / Gensim)**
 * **Computer Vision (OpenCV, scikit-image)**
 * **Deep Learning (TensorFlow, Keras, YOLOv8)**
 * **Object Tracking (SORT Algorithm)**
 * **OCR (EasyOCR)**
 * **Image preprocessing & augmentation**
 * **CNN architecture design**
+* **Text preprocessing & tokenization**
 * **Real-time video processing**
 * **Performance optimization techniques**
 * **GPU acceleration (CUDA, cuDNN, WSL2)**
-* **Visualization (matplotlib)**
-
+* **Visualization (Matplotlib, Seaborn)**
 ---
 
 ## Repository Structure

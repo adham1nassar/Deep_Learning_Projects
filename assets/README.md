@@ -1,12 +1,13 @@
 # Assets Folder
 
-This folder contains all the **datasets, images, and supporting files** used in the deep learning and computer vision projects within this repository.
+This folder contains all the **datasets, images, and supporting files** used in the machine learning, deep learning, computer vision, and NLP projects within this repository.
 
 ---
 
 ## Contents
 
 - **Image datasets** – Raw image data organized into class-based folders for training deep learning models  
+- **Text datasets** – NLP datasets used for emotion classification and language modeling  
 - **Visualizations & Demos** – GIFs and plots used to demonstrate model performance  
 - **Project-specific assets** – Each project has its own subfolder containing its data and outputs  
 
@@ -58,11 +59,27 @@ These assets support a **license plate recognition system**, including:
 
 ---
 
+### `Emotion_Word2Vec_NLP/`
+
+- Emotion classification visualizations  
+- Word2Vec embedding project assets  
+- Neural network training plots  
+- Model comparison charts  
+
+These assets support an **NLP emotion classification system**, including:
+- text preprocessing  
+- Word2Vec semantic embeddings  
+- machine learning & deep learning comparison  
+- neural network training visualization  
+
+---
+
 ## Related Projects
 
 - [Flowers Recognition — CNN Image Classification](../Flowers_Recognition_CNN)  
 - [Parking Spots Counter — OpenCV Real-Time Detection](../Parking_Spots_Counter_OpenCV)  
 - [License Plate Recognition — YOLOv8, SORT & OCR](../number_plate_recognition_Yolo_EasyOCR)  
+- [Emotion Classification — Word2Vec & Deep Learning](../Emotion_Word2Vec_NLP)  
 
 ---
 
@@ -71,5 +88,6 @@ These assets support a **license plate recognition system**, including:
 - Large video files are intentionally excluded to keep the repository lightweight  
 - GIFs are used instead for **fast, clear visual demonstrations**  
 - Assets are organized per project to maintain a **clean and scalable structure**  
+- The repository combines projects from computer vision, deep learning, machine learning, and NLP  
 
 ---
