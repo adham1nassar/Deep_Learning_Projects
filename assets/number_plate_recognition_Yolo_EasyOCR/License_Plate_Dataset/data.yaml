@@ -1,0 +1,8 @@
+path: /mnt/f/RTH/Git_Hub/Deep_Learning_Projects/assets/number_plate_recognition_Yolo_EasyOCR/License_Plate_Dataset
+train: train/images
+val: valid/images
+test: test/images
+
+
+names:
+  0: License_Plate
