@@ -67,6 +67,16 @@ The pipeline tracked:
 - Test accuracy
 - Training time
 
+<p align="center">
+  <img src="../assets/Human_Action_Classification/T1.png" width="750"/>
+</p>
+
+<p align="center">
+  <img src="../assets/Human_Action_Classification/T2.png" width="750"/>
+</p>
+
+
+
 ---
 
 ## Model Evaluation
@@ -76,6 +86,10 @@ Both transfer-learning strategies were evaluated on the human-action test datase
 In addition to overall accuracy and loss, **multiclass confusion matrices** were generated to analyze which human actions were correctly classified and which classes were commonly confused.
 
 Single-image inference was also performed to test the trained models on individual unseen images.
+
+<p align="center">
+  <img src="../assets/Human_Action_Classification/CM.png" width="750"/>
+</p>
 
 ---
 
